@@ -1,3 +1,5 @@
+envファイルとvendorファイルはリポジトリにアップされない仕様
+クローンして来たあとに.env.exampleを.envにリネーム
 php artisan key:generate
-php artisan serve  
-composer install
+composer installを実行して.vendorを作成。元環境と同じになる。
+php artisan serveで実行
