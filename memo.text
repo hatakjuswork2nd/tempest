@@ -3,3 +3,13 @@ envファイルとvendorファイルはリポジトリにアップされない�
 php artisan key:generate
 composer installを実行して.vendorを作成。元環境と同じになる。
 php artisan serveで実行
+
+Inquiryモデルを作成 php artisan make:model Inquiry -m
+table->データ型('名前')追加
+php artisan migrate マイグレーションファイルをデータベースに反映コマンド
+
+空白でも問題ない所は->nullable();
+php artisan migrate:rollback
+
+php artisan make:migration add_column_カラム名_to_テーブル名_table --table=テーブル名
+php artisan make:migration add_column_user_id_to_posts_table --table=posts
