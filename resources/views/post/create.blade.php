@@ -1,29 +1,27 @@
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mx-4 sm:p-8">
+<div class="row">
+    <div class="col-md-10 mt-6">
+        <div class="card-body">
+            <h1 class="mt4">新規投稿</h1>
                 <form enctype="multipart/form-data">
-                    <div class="md:flex items-center mt-8">
-                        <div class="w-full flex flex-col">
-                        <label for="title" class="font-semibold leading-none mt-4">件名</label>
-                        <input type="text" name="title" class="w-auto py-2 placeholder-gray-300 border border-gray-300 rounded-md" id="title" placeholder="Enter Title">
-                        </div>
-                    </div>
-    
-                    <div class="w-full flex flex-col">
-                        <label for="body" class="font-semibold leading-none mt-4">本文</label>
-                        <textarea name="body" class="w-auto py-2 placeholder-gray-300 border border-gray-300 rounded-md" id="body" cols="30" rows="10"></textarea>
-                    </div>
-    
-                    <div class="w-full flex flex-col">
-                        <label for="image" class="font-semibold leading-none mt-4">画像 </label>
-                        <div>
-                        <input id="image" type="file" name="image">
-                        </div>
+                    <div class="form-group">
+                         <label for="title">件名</label>
+                         <input type="text" name="title" class="form-control" id="title" placeholder="Enter Title">
                     </div>
 
-                    <button class="mt-4">
-                        送信する
-                    </button>
-                    
+                    <div class="form-group">
+                         <label for="body">本文</label>
+                         <textarea name="body" class="form-control" id="body" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                         <label for="image">画像 </label>
+                         <div class="col-md-6">
+                             <input id="image" type="file" name="image">
+                         </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">送信する </button>
                 </form>
-            </div>
         </div>
+    </div>
+ </div>
